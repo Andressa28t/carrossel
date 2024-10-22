@@ -1,0 +1,173 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #2fb8b8;
+
+}
+
+h1 {
+    font-family: "Lobster", serif;
+    font-weight: 900;
+    font-size: 5em;
+    margin: 0;
+    color: bisque;
+    text-shadow: 5px 3px 4px black;
+}
+
+header {
+    text-align: center;
+
+
+}
+
+.container {
+    height: 460px;
+    width: 800px;
+    overflow: hidden;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+.imagem img {
+    height: 100%;
+    width: 100%;
+}
+
+input {
+    display: none;
+}
+
+.bar {
+    background-color: aquamarine;
+    width: 30px;
+    height: 5px;
+    margin: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.bar:hover {
+    background-color: rgb(6, 67, 95);
+}
+
+.navegacao {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    display: flex;
+    transform: translate(-50%);
+}
+
+.imagens {
+    display: flex;
+    height: 100%;
+    width: 800%;
+}
+
+.imagem {
+    width: 12.5%;
+    transition: all 1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+#imagem1:checked~.img1 {
+    margin-left: 0;
+}
+
+#imagem2:checked~.img1 {
+    margin-left: -12.5%;
+}
+
+#imagem3:checked~.img1 {
+    margin-left: -25%;
+}
+
+#imagem4:checked~.img1 {
+    margin-left: -37.5%;
+}
+
+#imagem5:checked~.img1 {
+    margin-left: -50%;
+}
+
+#imagem6:checked~.img1 {
+    margin-left: -62.5%;
+}
+
+#imagem7:checked~.img1 {
+    margin-left: -75%;
+}
+
+#imagem8:checked~.img1 {
+    margin-left: -87.5%;
+}
+
+p {
+    color: #115252;
+    text-align: center;
+    margin-top: 1px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 17px;
+    font-family: "Arima", system-ui;
+    font-weight: bold;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    background-color: rgb(12, 136, 136);
+    width: 99vw;
+    text-align: center;
+    padding: 0 7px;
+}
+
+footer p {
+    font-size: 13px;
+    color: bisque;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+@media (max-width:480px) {
+    .container {
+        width: 500px;
+        height: 300px;
+    }
+
+    footer p {
+        font-size: 19px;
+    }
+
+    h1 {
+        padding: 40px;
+    }
+
+    p {
+        text-align: center;
+        margin: 4px;
+        text-decoration: underline;
+    }
+}
+
+/* @media (max-width:1180px){
+    .container {
+        width: 900px;
+        height: 600px;
+    }
+
+    footer p {
+        font-size: 30px;
+    }
+
+    h1 {
+        padding: 50px;
+        font-size:15vh;
+    }
+
+    p {
+        text-align: center;
+        margin:0;
+        font-size: 35px;
+    }
+} */
